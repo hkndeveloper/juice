@@ -59,14 +59,25 @@ const Experience3D = ({ showCharacter = true }) => {
                         />
                     </ModelContainer>
 
-                    {/* Juice WRLD character - Derinlik ve Işık İyileştirmesi */}
+                    {/* Character Corridor - Two Dancers */}
                     {showCharacter && (
                         <ModelContainer fallback={<PlaceholderBox position={[0, 0, 0]} scale={[1, 2, 1]} color="#22c55e" label="KARAKTER" />}>
-                            {/* Karakter Işığı */}
-                            <pointLight position={[0, 2, 4]} intensity={5} color="#ffffff" />
+                            {/* Dual Lights for Dual Characters */}
+                            <pointLight position={[-1.5, 2, 4]} intensity={5} color="#ffffff" />
+                            <pointLight position={[1.5, 2, 4]} intensity={5} color="#ffffff" />
+
+                            {/* Juice WRLD */}
                             <AnimatedModel
                                 path={cvData.hero.models.character}
-                                position={[0, -0.4, 1]}
+                                position={[-1.2, -0.4, 1]}
+                                rotation={[0, 0, 0]}
+                                scale={1.2}
+                            />
+
+                            {/* Verstappen */}
+                            <AnimatedModel
+                                path={cvData.hero.models.character2}
+                                position={[1.2, -0.4, 1]}
                                 rotation={[0, 0, 0]}
                                 scale={1.2}
                             />

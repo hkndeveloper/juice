@@ -6,7 +6,8 @@ export const cvData = {
         subtitle: "Engineering the Next Frontier",
         models: {
             nebula: "/models/nebula.glb",
-            character: "/models/juice_dance.fbx"
+            character: "/models/juice_dance.fbx",
+            character2: "/models/verstappen.fbx"
         }
     },
     about: {
