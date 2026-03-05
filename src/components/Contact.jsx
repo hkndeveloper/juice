@@ -41,7 +41,7 @@ const Contact = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter mb-4">
+                    <h2 className="text-4xl md:text-6xl font-heading font-black text-white uppercase tracking-tighter mb-4">
                         İLETİŞİM <span className="text-tech-blue">KUR</span>
                     </h2>
                     <div className="w-20 h-1 bg-tech-blue mx-auto mb-8 shadow-[0_0_15px_rgba(0,210,255,0.5)]" />
@@ -114,7 +114,7 @@ const Contact = () => {
                         className="flex flex-col gap-8 py-4"
                     >
                         <div className="space-y-4">
-                            <h3 className="text-2xl font-black text-white uppercase tracking-tight">VİZYONU GERÇEĞE DÖNÜŞTÜRELİM</h3>
+                            <h3 className="text-2xl font-heading font-black text-white uppercase tracking-tight">VİZYONU GERÇEĞE DÖNÜŞTÜRELİM</h3>
                             <p className="text-white/60 leading-relaxed font-medium">
                                 Yeni bir proje, iş birliği veya sadece selam vermek için bana ulaşın. Her zaman ilginç fikirleri konuşmaya hazırım.
                             </p>

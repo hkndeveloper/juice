@@ -5,9 +5,10 @@ export const cvData = {
         title: "Bilgisayar Mühendisi",
         subtitle: "Engineering the Next Frontier",
         models: {
-            nebula: "/models/nebula.glb",
+            skybox: "/models/deep_space_skybox.glb",
             character: "/models/juice_dance.fbx",
-            character2: "/models/verstappen.fbx"
+            character2: "/models/verstappen.fbx",
+            character3: "/models/Ymca Dance.fbx"
         }
     },
     about: {

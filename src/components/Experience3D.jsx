@@ -43,41 +43,48 @@ const Experience3D = ({ showCharacter = true }) => {
                 <PerspectiveCamera makeDefault position={[0, 1.5, 6]} fov={50} />
 
                 {/* Global Atmosphere */}
-                <Stars radius={100} depth={50} count={3000} factor={4} saturation={0} fade speed={0.5} />
-                <ambientLight intensity={2} />
+                <ambientLight intensity={0.5} />
                 <pointLight position={[10, 10, 10]} intensity={3} color="#00d2ff" />
 
                 <Suspense fallback={<Loader />}>
-                    {/* Nebula Case - Orijinal Konumuna Dönüldü */}
-                    <ModelContainer fallback={<PlaceholderBox position={[0, -2, 0]} scale={[6, 3, 6]} color="#a855f7" label="NEBULA" />}>
+                    {/* Deep Space Skybox */}
+                    <ModelContainer fallback={<PlaceholderBox position={[0, 0, 0]} scale={[50, 50, 50]} color="#050510" label="SPACE" />}>
                         <Model
-                            path={cvData.hero.models.nebula}
-                            position={[0, -2, 0]}
+                            path={cvData.hero.models.skybox}
+                            position={[0, 0, 0]}
                             rotation={[0, 0, 0]}
-                            scale={[1.5, 1.5, 1.5]}
-                            floatConfig={{ speed: 1, rotationIntensity: 0.5, floatIntensity: 1 }}
+                            scale={[1, 1, 1]}
                         />
                     </ModelContainer>
 
-                    {/* Character Corridor - Two Dancers */}
+                    {/* Character Corridor - Three Dancers */}
                     {showCharacter && (
                         <ModelContainer fallback={<PlaceholderBox position={[0, 0, 0]} scale={[1, 2, 1]} color="#22c55e" label="KARAKTER" />}>
-                            {/* Dual Lights for Dual Characters */}
-                            <pointLight position={[-1.5, 2, 4]} intensity={5} color="#ffffff" />
-                            <pointLight position={[1.5, 2, 4]} intensity={5} color="#ffffff" />
+                            {/* Three Lights for Three Characters */}
+                            <pointLight position={[-2.5, 2, 4]} intensity={5} color="#ffffff" />
+                            <pointLight position={[0, 2, 4]} intensity={6} color="#ffffff" />
+                            <pointLight position={[2.5, 2, 4]} intensity={5} color="#ffffff" />
 
-                            {/* Juice WRLD */}
+                            {/* Verstappen - Sol */}
                             <AnimatedModel
-                                path={cvData.hero.models.character}
-                                position={[-1.2, -0.4, 1]}
+                                path={cvData.hero.models.character2}
+                                position={[-2.4, -0.4, 1]}
                                 rotation={[0, 0, 0]}
                                 scale={1.2}
                             />
 
-                            {/* Verstappen */}
+                            {/* Juice WRLD - Orta (öne çıkarılmış) */}
                             <AnimatedModel
-                                path={cvData.hero.models.character2}
-                                position={[1.2, -0.4, 1]}
+                                path={cvData.hero.models.character}
+                                position={[0, -0.4, 1.6]}
+                                rotation={[0, 0, 0]}
+                                scale={1.4}
+                            />
+
+                            {/* YMCA Dance - Sağ */}
+                            <AnimatedModel
+                                path={cvData.hero.models.character3}
+                                position={[2.4, -0.4, 1]}
                                 rotation={[0, 0, 0]}
                                 scale={1.2}
                             />

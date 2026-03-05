@@ -11,7 +11,7 @@ const Projects = () => {
                     initial={{ opacity: 0, x: -30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter mb-20 text-glow-blue"
+                    className="text-4xl md:text-5xl font-heading font-black text-white uppercase tracking-tighter mb-20 text-glow-blue"
                 >
                     Projeler
                 </motion.h2>
@@ -31,7 +31,7 @@ const Projects = () => {
                                     Project {project.id}
                                 </span>
 
-                                <h3 className="text-3xl font-black text-white mb-2 uppercase group-hover:text-tech-blue transition-colors">
+                                <h3 className="text-3xl font-heading font-black text-white mb-2 uppercase group-hover:text-tech-blue transition-colors">
                                     {project.title}
                                 </h3>
 

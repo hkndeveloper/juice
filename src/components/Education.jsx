@@ -11,7 +11,7 @@ const Education = () => {
                     initial={{ opacity: 0, x: -30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter mb-20 text-glow-blue"
+                    className="text-4xl md:text-5xl font-heading font-black text-white uppercase tracking-tighter mb-20 text-glow-blue"
                 >
                     Eğitim
                 </motion.h2>
@@ -32,7 +32,7 @@ const Education = () => {
 
                             <div className="flex-1">
                                 <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4 gap-2">
-                                    <h3 className="text-2xl font-black text-white uppercase">
+                                    <h3 className="text-2xl font-heading font-black text-white uppercase">
                                         {edu.school}
                                     </h3>
                                     <span className="text-tech-blue font-mono text-xs font-black tracking-widest bg-tech-blue/10 px-4 py-1 rounded-full border border-tech-blue/20">

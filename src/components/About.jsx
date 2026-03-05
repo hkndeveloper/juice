@@ -13,7 +13,7 @@ const About = () => {
                     transition={{ duration: 1 }}
                     className="glass-nirvana p-12 md:p-20 rounded-[40px] nebula-border"
                 >
-                    <h2 className="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter mb-8 text-glow-pink">
+                    <h2 className="text-4xl md:text-5xl font-heading font-black text-white uppercase tracking-tighter mb-8 text-glow-pink">
                         {cvData.about.title}
                     </h2>
 

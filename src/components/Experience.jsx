@@ -10,7 +10,7 @@ const Experience = () => {
                     initial={{ opacity: 0, x: -30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter mb-20 text-glow-blue"
+                    className="text-4xl md:text-5xl font-heading font-black text-white uppercase tracking-tighter mb-20 text-glow-blue"
                 >
                     Deneyim
                 </motion.h2>
@@ -32,7 +32,7 @@ const Experience = () => {
                                 {item.period}
                             </span>
 
-                            <h3 className="text-3xl md:text-5xl font-black text-white mb-2 uppercase">
+                            <h3 className="text-3xl md:text-5xl font-heading font-black text-white mb-2 uppercase">
                                 {item.title}
                             </h3>
 

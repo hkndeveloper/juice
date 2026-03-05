@@ -10,7 +10,7 @@ const Skills = () => {
                     initial={{ opacity: 0, x: -30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    className="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter mb-20 text-glow-blue"
+                    className="text-4xl md:text-5xl font-heading font-black text-white uppercase tracking-tighter mb-20 text-glow-blue"
                 >
                     Yetenekler
                 </motion.h2>
@@ -25,7 +25,7 @@ const Skills = () => {
                             transition={{ delay: idx * 0.2 }}
                             className="glass-nirvana p-10 rounded-[40px] border-white/5 group hover:border-tech-blue/30 transition-all duration-500"
                         >
-                            <h3 className="text-white font-black mb-8 text-2xl tracking-tighter uppercase">
+                            <h3 className="text-white font-heading font-black mb-8 text-2xl tracking-tighter uppercase">
                                 {group.category}
                             </h3>
 

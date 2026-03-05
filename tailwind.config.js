@@ -21,7 +21,9 @@ export default {
                 'off-white': '#FAFAFA',
             },
             fontFamily: {
-                sans: ['Inter', 'sans-serif', 'ui-sans-serif', 'system-ui'],
+                sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                body: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                heading: ['"Orbitron"', 'sans-serif'],
             },
         },
     },
